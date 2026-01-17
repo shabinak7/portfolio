@@ -1,0 +1,315 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Ummu Shabina K — Front-End Developer</title><style>/* styles.css */
+:root {
+  --bg: rgb(244, 226, 164);
+  --card: rgb(203, 175, 130);
+  --muted: #ffffff;
+  --text: #ffffff;
+  --accent: #000000;
+  --accent-2: #3268c6;
+  --border: #c6c6c6;
+}
+
+* { box-sizing: border-box; }
+html, body { height: 100%; }
+body {
+  margin: 0;
+  font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+  background:  rgb(242, 237, 215);
+  color: var(--text);
+  line-height: 1.6;
+}
+
+a { color: var(--accent); text-decoration: none; }
+a:hover { color: var(--accent-2); text-decoration: underline; }
+
+.container {
+  width: min(980px, 92%);
+  margin: 0 auto;
+}
+
+.skip-link {
+  position: absolute; left: -999px; top: -999px;
+}
+.skip-link:focus {
+  left: 1rem; top: 1rem; background: var(--accent);
+  color: #06111b; padding: 0.5rem 0.75rem; border-radius: 6px;
+}
+
+.site-header {
+  border-bottom: 1px solid var(--border);
+  background: rgb(119, 84, 28);
+  backdrop-filter: saturate(120%) blur(6px);
+}
+.site-header .container {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 1rem;
+  align-items: center;
+  padding: 1.25rem 0;
+}
+.identity .name {
+  margin: 0;
+  font-size: clamp(1.6rem, 2.8vw, 2.2rem);
+  letter-spacing: 0.2px;
+}
+.identity .role {
+  margin: 0.15rem 0 0;
+  color: var(--muted);
+  font-weight: 600;
+}
+
+.contact {
+  list-style: none;
+  display: flex; flex-wrap: wrap;
+  gap: 0.75rem 1rem; margin: 0; padding: 0;
+}
+.contact li a {
+  display: inline-block; padding: 0.4rem 0.6rem;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  background: #cdcdcd;
+}
+
+main { padding: 2rem 0 3rem; }
+
+.card {
+  border: 1px solid var(--border);
+  background: var(--card);
+  border-radius: 14px;
+  padding: 1.25rem 1.25rem;
+  margin-bottom: 1rem;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.25);
+}
+.card h2 {
+  margin: 0 0 0.75rem;
+  font-size: clamp(1.1rem, 2.2vw, 1.4rem);
+  color: rgb(119, 84, 28);
+}
+
+.item { margin: 0.6rem 0 0.9rem; }
+.item-head {
+  display: flex; flex-wrap: wrap;
+  justify-content: space-between; gap: 0.5rem;
+}
+.item h3 {
+  margin: 0; font-size: 1rem; font-weight: 700;
+  color: #545454;
+}
+.meta {
+  color: var(--muted);
+  font-size: 0.92rem;
+}
+
+.bullets {
+  margin: 0.5rem 0 0;
+  padding-left: 1.25rem;
+}
+.bullets li { margin: 0.25rem 0; }
+.bullets.compact { padding-left: 1rem; }
+.bullets.compact li { margin: 0.15rem 0; }
+
+.projects { margin: 0.4rem 0 0; }
+
+.two-col .col {
+  display: grid;
+  gap: 0.6rem;
+}
+@media (min-width: 720px) {
+  .two-col .col {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+.site-footer {
+  border-top: 1px solid var(--border);
+  margin-top: 2rem;
+  padding: 1rem 0 1.6rem;
+  color: black;
+  text-align: center;
+}
+
+/* Print-friendly adjustments */
+@media print {
+  :root {
+    --bg: #fff; --card: #fff;
+    --text: #000; --muted: #333; --border: #ddd;
+    --accent: #000; --accent-2: #000;
+  }
+  body { background: #fff; }
+  a { text-decoration: none; color: #000; }
+  .site-header, .site-footer { border-color: #ddd; backdrop-filter: none; }
+  .card { box-shadow: none; border-color: #ddd; }
+}</style>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <a class="skip-link" href="#content">Skip to content</a>
+
+  <header class="site-header">
+    <div class="container">
+      <div class="identity">
+        <h1 class="name">Ummu Shabina K.</h1>
+        <p class="role">Front-End Developer</p>
+      </div>
+      <ul class="contact">
+        <li><a href="tel:+971526113224" aria-label="Call mobile">Mob: +971 52 611 3224</a></li>
+        <li><a href="mailto:ummushabinak@gmail.com">ummushabinak@gmail.com</a></li>
+        <li><a href="https://www.linkedin.com/in/ummu-shabina/" target="_blank" rel="noopener">LinkedIn</a></li>
+        <li><a href="https://github.com/shabinak7" target="_blank" rel="noopener">GitHub</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <main id="content" class="container">
+    <section aria-labelledby="summary-title" class="card">
+      <h2 id="summary-title">Summary</h2>
+      <p>
+        Creative and detail-oriented Front-End Developer with 6 months of hands-on experience designing and building user-centric websites and applications. Proficient in HTML, CSS, JavaScript, and modern frameworks like React and Bootstrap. Skilled at creating responsive, performance-optimized web experiences that are visually appealing and easy to navigate. Advocate for web standards and accessibility. Collaborative team player, eager to contribute and continuously learn in a fast-evolving field.
+      </p>
+    </section>
+
+    <section aria-labelledby="experience-title" class="card">
+      <h2 id="experience-title">Experience</h2>
+
+      <article class="item">
+        <div class="item-head">
+          <h3>Freelance Designer & Video Editor</h3>
+          <span class="meta">Remote — Dubai-based Clients | Jan 2024 – Present</span>
+        </div>
+        <ul class="bullets">
+          <li>Designed promotional flyers, banners, and posters for retail and service businesses.</li>
+          <li>Created engaging video ads and social media reels using CapCut and VN Video Editor.</li>
+          <li>Collaborated with clients to align content with branding goals.</li>
+          <li>Delivered content optimized for WhatsApp, Instagram, and in-store displays to boost engagement.</li>
+          <li>Managed multiple projects with tight deadlines, ensuring high-quality output.</li>
+        </ul>
+      </article>
+
+      <article class="item">
+        <div class="item-head">
+          <h3>Web Developer Intern — EFEONE Pvt Ltd</h3>
+          <span class="meta">Calicut, Kerala | Sep 2023 – Nov 2023</span>
+        </div>
+        <ul class="bullets">
+          <li>Built responsive websites using HTML, CSS, JavaScript, Bootstrap, and React.js.</li>
+          <li>Developed user-friendly interfaces with attention to performance.</li>
+        </ul>
+        <p class="projects"><strong>Projects:</strong> Little Clouds, One Compliance, AUMMS</p>
+      </article>
+
+      <article class="item">
+        <div class="item-head">
+          <h3>Junior Product Engineer Intern — EFEONE Pvt Ltd</h3>
+          <span class="meta">Calicut, Kerala | Jun 2023 – Aug 2023</span>
+        </div>
+        <ul class="bullets">
+          <li>Developed and maintained ERP web applications using the Frappe Framework.</li>
+          <li>Automated workflows and improved backend processes for scalability and efficiency.</li>
+        </ul>
+      </article>
+    </section>
+
+    <section aria-labelledby="education-title" class="card two-col">
+      <h2 id="education-title">Education</h2>
+      <div class="col">
+        <article class="item">
+          <h3>Master of Computer Application</h3>
+          <p class="meta">Chinmaya Institute of Technology, Kannur University, Kerala, India (2021–2023)</p>
+        </article>
+        <article class="item">
+          <h3>Bachelor of Computer Application</h3>
+          <p class="meta">MET Arts and Science College, Calicut University, Kerala, India (2018–2021)</p>
+        </article>
+        <article class="item">
+          <h3>Higher Secondary</h3>
+          <p class="meta">NAM HSS, Kerala Board, Kerala, India (2016–2018)</p>
+        </article>
+      </div>
+    </section>
+
+    <section aria-labelledby="projects-title" class="card">
+      <h2 id="projects-title">Academic projects</h2>
+
+      <article class="item">
+        <h3>MEDOC — Hospital Information Management System</h3>
+        <p>Developed a secure digital system using HTML, CSS, MySQL, and Android to replace manual hospital processes. Manages patient registration, doctor scheduling, appointments, and medical records.</p>
+      </article>
+
+      <article class="item">
+        <h3>The Art Crush — Web Application</h3>
+        <p>Built a platform for artists to showcase work and customers to browse and purchase affordable art, with integrated seller and customer modules.</p>
+      </article>
+
+      <article class="item">
+        <h3>AUMMS — Automated Unified Metal Management System</h3>
+        <p>Customized an ERPNext-based solution for the gold sector, automating accounting, inventory, and operations with stock management, transactions, invoicing, and real-time reporting.</p>
+      </article>
+    </section>
+
+    <section aria-labelledby="cert-title" class="card two-col">
+      <h2 id="cert-title">Certifications</h2>
+      <div class="col">
+        <article class="item">
+          <h3>Full Stack Web Development</h3>
+          <p class="meta">React JS, Angular, Node JS — Oak Academy (2022)</p>
+        </article>
+      </div>
+    </section>
+
+    <section aria-labelledby="skills-title" class="card two-col">
+      <h2 id="skills-title">Technical skills</h2>
+      <div class="col">
+        <ul class="bullets compact">
+          <li><strong>Front-End:</strong> HTML5, CSS3, JavaScript (ES6+), React (hooks, JSX), Bootstrap</li>
+          <li><strong>UI/UX:</strong> Figma, Adobe Photoshop, Illustrator</li>
+          <li><strong>Video:</strong> CapCut, VN</li>
+          <li><strong>Tools:</strong> VS Code, Git, GitHub</li>
+          <li><strong>Responsive Web Design</strong></li>
+          <li><strong>Branding & Visual Design</strong></li>
+        </ul>
+      </div>
+    </section>
+
+    <section aria-labelledby="lang-title" class="card two-col">
+      <h2 id="lang-title">Languages</h2>
+      <div class="col">
+        <ul class="bullets compact">
+          <li>English</li>
+          <li>Hindi</li>
+          <li>Malayalam (Mother Tongue)</li>
+        </ul>
+      </div>
+    </section>
+
+    <section aria-labelledby="personal-title" class="card two-col">
+      <h2 id="personal-title">Personal details</h2>
+      <div class="col">
+        <ul class="bullets compact">
+          <li><strong>Location:</strong> Abu Dhabi, UAE</li>
+          <li><strong>Nationality:</strong> Indian</li>
+          <li><strong>Visit status:</strong> Visit Visa</li>
+        </ul>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© <span id="year"></span> Ummu Shabina K.</p>
+    </div>
+  </footer>
+
+  <script>
+    // Accessible focus for skip link + dynamic year
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>

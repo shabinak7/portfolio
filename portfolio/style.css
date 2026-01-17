@@ -1,0 +1,515 @@
+@import url('https://fonts.googleapis.com/css2?family=Anta&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+:root{
+ /* --bg-color:#1f242e; */
+ --second-bg-color:#323946;
+ --text-color:#fff;
+ --main-color:#0ef;
+
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style-type: none;
+    text-decoration: none;
+    border:none;
+    outline: none;
+    font-family:"Anta",sans-serif;
+}
+html
+{
+    font-size: 62.5%;
+    overflow-x: hidden ;
+}
+body
+{
+
+    background-color: rgb(242, 237, 215);
+    color:rgb(117, 117, 117);
+
+}
+section 
+{
+    min-height: 100vh;
+    padding: 10rem 9% 2rem;
+
+}
+span{
+    color:rgb(164, 132, 80);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/*--------------Header section---------------*/
+.header{
+    position: fixed;
+    top:0;
+    left:0;
+    width: 100%;
+    padding: 2rem 9%;
+    background-color:rgb(119, 84, 28);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+.logo{
+    font-size: 2.5rem;
+    color:rgb(164, 132, 80);
+    font-weight:600;
+
+}
+.navbar a{
+    font-size: 1.5rem;
+    color: var(--text-color);
+    margin-left: 4rem;
+    transition: 0.3s;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.navbar a:hover{
+    color:rgb(164, 132, 80);
+}
+.home{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+.home-content h3{
+    font-size: 3rem;
+    font-weight: 700;
+    color: #323946;
+} 
+.home-content h3:nth-of-type(2)
+{
+  margin-bottom: 2rem;
+} 
+.home-content h1{
+    font-size: 5.5rem;
+    font-weight: 700;
+    line-height: 1.3;
+    color: rgb(119, 84, 28);
+} 
+.home-content p{
+    font-size: 1.5rem;
+    display:flexbox;
+    color: #323946;
+     line-height: 1.8;                  
+  margin: 1rem auto 2rem;             
+  max-width: 700px; 
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;  
+}
+.home-img{
+    border-radius: 50%;
+    background-color: rgb(164, 132, 80);
+    box-shadow: 0 0 1rem var(rgb(255, 157, 0));
+}
+.home-img img{
+    width:30vw;
+    animation:floatImage 15s ease-in-out infinite;
+}
+.social-media a {
+    display:inline-flex;
+    justify-content: center;
+    align-items: center;
+    width:5rem;
+    height: 5rem;
+    background-color: transparent;
+    border: 8.6px solid rgb(119, 84, 28);
+    border-radius: 50%;
+    font-size: 2rem;
+    color: rgb(119, 84, 28);
+    margin: 3rem 1.5rem 3rem 0;
+    transition: all 0.7s;
+
+}
+.social-media a:hover{
+    background-color:rgb(119, 84, 28);
+    color: rgb(255, 255, 255);
+    box-shadow: 0 0 1rem rgb(193, 193, 193);
+    transform: scale(1.1);
+
+}
+.btn{
+    display: inline-block;
+    padding: 1rem 2.5rem;
+    background-color: rgb(119, 84, 28);
+    border-radius: 4rem;
+    box-shadow: 0 0 1rem rgb(223, 220, 215);
+    font-weight: 700;
+    color: rgb(255, 255, 255);
+    letter-spacing: 2px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.btn:hover{
+    box-shadow: none;
+}
+
+
+/*-------------About Section--------------*/
+.about{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:2rem;
+    background-color: rgb(203, 175, 130);
+    
+
+}
+.about-img img{
+    width:30vw;
+    margin-top:60px;
+
+}
+.heading{
+    text-align: center;
+    font-size: 5.5rem;
+    margin: 1rem 0 4rem;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+
+}
+/* .about-content h2{
+    text-align: left;
+    line-height: 6.2;
+} */
+ .about h1{
+    font-size: 6.5rem;
+
+ }
+.about-content h3{
+    font-size: 3.3rem;
+    text-align: center;
+    color:rgb(119, 84, 28) ;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.about-content p{
+   font-size: 1.8rem;
+   margin: 2rem 0 3rem;
+   text-align: center;
+   display:flex;
+   color: #323946;
+    text-align: justify;  
+     line-height: 1.8;                  
+  /* margin: 1rem auto 2rem;              */
+  max-width: 800px;   
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;      
+}
+
+/*-------------Service Section--------------*/
+
+.services{
+    background-color: rgb(203, 175, 130);
+
+}
+.service h2{
+    margin-bottom: 5rem;
+}
+.service-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap:wrap ;
+    gap: 2rem;
+}
+.service-container .service-box{
+    flex:1 1 30rem;
+    background-color: rgb(128, 93, 36);;
+    padding: 3rem 2rem 4rem;
+    border-radius: 2rem;
+    text-align: center;
+    border:3px solid  rgb(203, 175, 130);
+    transition:all 0.5s;
+}
+.service-container .service-box:hover{
+    border-color: #77541c;
+    transform: scale(1.03);
+}
+.service-box i{
+ margin: 1rem 0 2rem;
+    font-size: 3rem;
+    color: rgb(244, 226, 164);
+    
+}
+.service-box h3{
+    font-size: 2rem;
+    color: aliceblue;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.service-box p {
+  font-size: 1.1rem;                  
+  line-height: 1.8;                  
+  margin: 1rem auto 2rem;             
+  max-width: 500px;                  
+  text-align: justify;               
+  color: #e0e0e0;                     
+  font-family: "Segoe UI", Arial, sans-serif; 
+  padding: 0 1rem;  }
+/* .service-box p{
+    font-size: 1rem;
+    margin: 1rem 0 3rem;
+    text-align: center;
+    color:#d4d4d4;
+} */
+
+/*--------------Portfolio section------------*/
+.project {
+    background-color: rgb(242, 237, 215);
+}
+.project h2{
+    margin-bottom: 4rem;
+}
+.project-container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    gap: 2.5rem;
+
+}
+.project-container .project-box{
+    position: relative;
+    border-radius: 2rem;
+    box-shadow: 0 0 1 var(--bg-color);
+    overflow: hidden;
+    display: flex;
+}
+.project-box img{
+    width:100%;
+    height: 20rem;
+    transition: all 0.5s;
+
+}
+.project-box:hover img{
+    transform: scale(1.1);
+
+}
+.project-box .project-layer{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+   background: linear-gradient(rgba(191, 145, 54, 0.5),rgb(242, 237, 215));
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 0 4rem;
+    text-align: center;
+    transform: translateY(100%);
+    transition: all 0.2s ease-in-out;
+}
+.project-box:hover .project-layer{
+    transform: translateY(0);
+    cursor: pointer;
+}
+.project-layer h4{
+    font-size: 3rem;
+    color: #000000;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.project-layer p{
+    font-size: 1.3rem;
+    margin: 10px 0 1rem;
+    color: #323946;
+     text-align: justify; 
+     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;       
+     
+}
+.project-layer a{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 5rem;
+    height: 5rem;
+    background-color: var(--text-color);
+    border-radius: 50%;
+}
+.project-layer a i{
+    font-size: 2rem;
+    color:black;
+}
+
+/*-----------contact section------------*/
+
+
+.contact h2{
+    margin-bottom: 3rem;
+}
+.contact form{
+    max-width: 70rem;
+    margin: 1rem auto;
+    text-align: center;
+    margin-bottom: 3rem;
+
+}
+.contact form .input-box{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.contact form .input-box input,.contact form textarea{
+    width: 100%;
+    padding: 1.5rem;
+    font-size: 1.5rem;
+    color:rgb(72, 72, 72);
+    background-color: rgb(255, 253, 253);
+    border-radius: 10px;
+    margin: 10px 0;
+}
+.contact form .input-box input{
+    width: 49%;
+
+}
+.contact form textarea{
+    resize: none;
+}
+.contact form .btn{
+    text-align: center;
+    font-size: 2rem;
+    font-weight: bolder;
+    cursor: pointer;
+}
+
+/*-----------footer section-------------*/
+.footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 3rem 9 px;
+    background-color: rgb(119, 84, 28);
+}
+.footer-text p{
+    font-size: 1.5rem;
+    transition: all 0.5s;
+    color: aliceblue;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.top-icon a{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    background-color: rgb(155, 131, 92);
+   
+}
+.top-icon a:hover{
+    box-shadow: 0 0 1 rgb(126, 122, 116);
+}
+.top-icon a i{
+    font-size: 2rem;
+    color: rgb(255, 255, 255);
+}
+
+
+
+
+
+
+
+
+
+
+@keyframes floatImage{
+    0%{
+        transform: translateY(0);
+
+    }
+    50%
+    {
+        transform: translateY(-2rem);
+    }
+    100%{
+        transform: translateY(0);
+    }
+}
+
+
+/*-----------media ---------*/
+
+@media screen and (max-width:1200px) {
+    html{
+        font-size: 55%;
+    }
+    
+}
+@media screen and (max-width:991px) {
+    section{
+        paddind: 10rem 3% 2rem;
+    }
+    .header {
+        padding: 2rem 3%;
+    }
+    .footer{
+        padding: 2rem 3% ;
+    }
+    .service{
+        padding:7rem ;
+    }
+    .project{
+        padding:7rem ;
+    }
+}
+@media screen and (max-width:768px) {
+    .header{
+        flex-direction:column;
+    }
+    .navbar{
+        width:100%;
+        display:flex;
+        justify-content:space-evenly;
+        flex-wrap:wrap;
+        align-items:center;
+    }
+    .home{
+        flex-direction: column;
+    }
+    .home-content h3{
+        font-size: 2.5rem;
+    }
+     .home-content h1{
+        font-size: 5rem;
+    }
+    .home-img img{
+        width:70vw;
+        margin-top: 4rem;
+    }
+    .about{
+        flex-direction: column-reverse;
+    }
+    .about img{
+        width:70vw;
+        margin-top:2rem;
+    }
+    .project h2{
+        margin-bottom: 3rem;
+    }
+    .project-container{
+        grid-template-columns: repeat(2,1fr);
+    }
+}
+@media screen and (max-width: 576px){
+    html{
+        font-size: 50%;
+    }
+    .project-container{
+        grid-template-columns: 1fr;
+    }
+    .contact form .input-box input{
+        width: 100%;
+    }
+    
+}
+@media screen and (max-width: 350px){
+
+.home-img img{
+    width: 90vw;
+}
+.about-img img{
+    width: 90vw;
+}
+.footer{
+    flex-direction: column-reverse;
+}
+
+}
